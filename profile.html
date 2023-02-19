@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Chat App - Profile Section</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Profile section styles */
+        .profile {
+            flex-basis: calc(100% / 3 - 20px);
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile .img {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile h2 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #999;
+        }
+
+        .profile ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .profile ul li {
+            display: inline-block;
+            margin: 15px 10px 5px 10px;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #eee;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .profile .logout {
+            display: block;
+            margin: 10px auto;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .profile .logout:hover {
+            background-color: #c0392b;
+        }
+        .online{
+          height:10px;
+          width:10px;
+        }
+      .para{
+        display:inline;
+      }
+
+        /* Media queries */
+        @media screen and (max-width: 767px) {
+            .container {
+                flex-direction: column;
+            }
+
+
+            .profile {
+                flex-basis: 100%;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            .container {
+                flex-wrap: nowrap;
+            }
+
+            .profile {
+                flex-basis: calc(50% - 20px);
+                margin-right: 40px;
+            }
+
+            .profile:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            .profile {
+                flex-basis: calc(100% / 3 - 20px);
+            }
+
+            .profile:last-of-type {
+                margin-right: 0;
+            }
+
+            .form {
+                margin-top: 10px;
+            }
+            .onoff{
+              display: block;
+              align-items : center;
+              align-content :center;
+              text-align : center;
+          }
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <!-- 			<img src="https://via.placeholder.com/150" alt="Profile picture"> -->
+            <img class="img" src="https://www.meme-arsenal.com/memes/ecf05ef40a51394df19ae1352896ae3a.jpg" alt="Profile picture">
+<!--             <h2>sanak Javani</h2> -->
+          <center>
+            <table>
+            <tr>
+              <td><h2>Sanak Javani</h2></td>
+            </tr>
+          </table>
+          </center>
+          <div class="onoff">
+            <center>
+            <img class="online" src="https://www.pngfind.com/pngs/m/269-2698936_green-dot-icon-png-green-online-icon-png.png" alt="Profile picture">
+            <p class="para">Online</p>
+            </center>
+          </div>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <form class="form" action="signin.html">
+                <input class="logout" type="submit" value="Log Out">
+                <!-- 			<button class="logout">
+        <a href="index.html"style="text-decoration : none; color:white;">Log Out</a>
+      </button> -->
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

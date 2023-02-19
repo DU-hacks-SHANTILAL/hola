@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
+  <meta charset="utf-8">
+  <title>Sign In</title>
+  <style>
+    body {
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+    }
+
+    .container .left {
+
+      background-color: #25a7da;
+      background-image: url('images/background_2.png');
+      background-size: cover;
+      flex: 1.8;
+    }
+
+    .left h2 {
+      font-weight: bold;
+      font-size: 32px;
+      text-align: center;
+      margin-top: 50px;
+      font-family: 'Noticia Text', serif;
+    }
+
+    /*         .bgimg{
+          width : 30%;
+          height : 40%;
+        } */
+    .bgimg img {
+      width: 30%;
+      height: 40%;
+    }
+
+    .container .right {
+      background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+      background-color: white;
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Noticia Text', serif;
+    }
+
+    .container .right h2 {
+      font-size: 36px;
+      margin: 20px;
+      margin-bottom: 40px;
+    }
+
+    .container .right img {
+      /*             width: 150px;
+            margin: 20px;
+            margin-bottom: 50px; */
+      display: block;
+      margin: 0 auto 30px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .container .right .table {
+      background-color: #25a7da;
+      /*             background-image : url('images/background_2.png'); */
+      opacity: 0.7;
+      background-size: cover;
+      color: white;
+      margin: 20px;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .container .right abc {
+      background-color: #4CAF50;
+      color: white;
+      margin: 20px;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .container .right a {
+      text-decoration: none;
+      color: white;
+    }
+
+    /* .container .right input:hover {
+      /*             background-color: #45a049; */
+    } */
+
+    .container .right abc:hover {
+      background-color: #45a049;
+    }
+
+    td {
+      padding: 7px;
+    }
+
+    /*             .logo{
+              display: block;
+              margin: auto auto;
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+              object-fit: cover;
+              object-position: center;
+            } */
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--font-family: 'Noticia Text', serif;-->
+  <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <p>
+    </div>
+    <div class="right">
+      <img class="logo" src="images/logo.png" alt="logo not found" style="display: block;
+              margin: 13px 0px -21px 0px;
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              object-fit: cover;
+              object-position: center;">
+      <h2 style="color : black">HOLA!</h2>
+      <!--           <h1 style="color : #25a7da">Sign In</h1> -->
+      <!--           <a href="chat.html" class="abc">Chat</a> -->
+      <table class="table">
+        <!--             <th style="color : white"><tr colspan="2"><td><h3>Sign In</h3></td></tr></th> -->
+        <tr>
+          <th colspan="2" style="color: white; font-size:30px;"> Sign In </th>
+        </tr>
+        <form action="signin.php" method="post">
+          <tr class="tr">
+
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name" required><br></td>
+          </tr>
+          <tr class="tr">
+
+            <td><label for="username">Username:</label></td>
+            <td><input type="text" id="username" name="username" required><br></td>
+          </tr>
+          <tr class="tr">
+
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" name="password" required><br></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="checkbox" id="rem me" name="rem me">
+              <label for="rem me">Remember Me.</label><br>
+            </td>
+
+          </tr>
+
+          <tr class="tr">
+            <td colspan="2">
+              <center>
+                <input style="color : #25a7da" type="submit" value="Sign In">&nbsp; <input style="color : #25a7da"
+                  type="reset">
+              </center>
+            </td>
+          </tr>
+          <tr class="tr">
+            <td colspan="2">
+              <center><a href="forgote.html">Forgote Password ?</a></center>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <center>Dont't Hava an Accoutn ? <a href="signup.html">Sign Up</a></center>
+            </td>
+          </tr>
+        </form>
+      </table>
+    </div>
+  </div>
+  <script>
+    alert("Be Topaa Joy ne Nakhne Detail....")
+  </script>
+</body>
+</html>
